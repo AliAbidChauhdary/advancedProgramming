@@ -1,1 +1,2 @@
-# advancedProgramming This Repository Contines some Class Activies
+# advancedProgramming 
+This repository Contains My Class Assignments and class tasks
