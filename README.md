@@ -1,2 +1,2 @@
 # advancedProgramming 
-This repository Contains My Class Assignments and class tasks
+This repository Contains My Class Assignments, Labs and class tasks
