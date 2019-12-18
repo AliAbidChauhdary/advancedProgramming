@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 7: Introducing jQuery - Event Object</title>
+    <link rel="stylesheet" href="css/c07.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>Buy groceries</h2>
+      <ul>
+        <li id="one" class="hot"><em>fresh</em> figs</li>
+        <li id="two" class="hot">pine nuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four">linguine</li>
+        <li >cream</li>
+         <li >cocount milk </li>
+         <li > mushrooms</li>
+         <li > apples</li>
+         <li > strawberries</li>
+         <li > rice crackers</li>
+         <li > brie</li>
+         <li > rice</li>
+         <li > green tea</li>
+         <li > vine-rippened tomatoes</li>
+         <li > bannans</li>
+         <li > red kidney beans</li>
+         <li > haricot beans</li>
+         <li > lettuce</li>
+         <li > sushi nori</li>
+         <li > garlic</li>
+         <li > ginger</li>
+         <li > red onions</li>
+         <li > goat's cheese</li>
+         <li >leeks</li>
+         <li > carrots</li>
+         <li > pears</li>
+         <li > apples</li>
+         <li > orange free-range eggs</li>
+          <li > red kidney beans</li>
+         <li > haricot beans</li>
+         <li > lettuce</li>
+         <li > sushi nori</li>
+         <li > garlic</li>
+         <li > ginger</li>
+         <li > kale </li>
+         <li> gluoten free soy sauce</li>
+         <li> quinoa</li>
+
+            </ul>
+            <h2 id="footer">@ListKing </h2>
+            <div id="slideAd" style="right: 0px;"> BUY LISTKING PRO<br> FOR ONLY $1.99</div>
+    </div>
+    <script type="text/javascript">
+    	$("#slideAd").hide();;
+       $(document).ready(function(){
+       	$(window).on("scroll",function(){
+
+       		 var height = $(document).height();
+        var currPos = $(window).height()+$(window).scrollTop();
+        if((height-currPos)/height==0)
+        {
+        	$("#slideAd").fadeIn("slow");;
+
+        }
+        else{
+             $("#slideAd").fadeOut();
+        }
+       	});
+       
+        
+      });
+
+    </script>
+  </body>
+</html>
